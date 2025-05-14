@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: GymWorkout
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver  # "Driver" com "D" maiúsculo
+    url: jdbc:mysql://localhost:3306/DbGymWorkout?useTimezone=true&serverTimezone=UTC
+    username: root
+    password: Marioviado1@
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+      #dialect: org.hibernate.dialect.MySQLDialect
+    show-sql: false
+    open-in-view: false
+logging:
+  level:
+    br.com.joaoamaral: DEBUG
